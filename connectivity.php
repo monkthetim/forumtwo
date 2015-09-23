@@ -27,7 +27,7 @@ function SignIn($conn) {
 
             $_SESSION['userName'] = $row['userName'];
             $_SESSION['userNameID'] = $row['userNameID'];
-         
+
             header('Location: http://localhost/forumtwo/securepage.php/');
         } else {
             echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...";

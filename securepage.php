@@ -29,9 +29,8 @@ if (!isset($_SESSION['userName'])) {
             $id = $row['topic_id'];
 
             echo '<h3><a href=http://localhost/forumtwo/post.php?id=' . $id . '>' . $row['topic_subject'] . '</a></h3>';
-            echo $row['topic_creator_name'] ;
+            echo $row['topic_creator_name'];
         }
-     
         ?>
     </body>
     <fieldset style="width:20%"><legend>Create Topic</legend>
