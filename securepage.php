@@ -1,12 +1,14 @@
 <?PHP
 session_start();
-echo "Hello " . $_SESSION['userName'];
+echo "<div style='text-align:right'>Hello " .$_SESSION['userName']."</div>";
+
 
 if (!isset($_SESSION['userName'])) {
     header("Location: http://localhost/forumtwo/loginPage.php");
 }
 ?>
 <html>
+    <p align="right"> <a href="http://localhost/forumtwo/logout.php">Logout</a></p>
     <head>
         <meta charset="UTF-8">
         <title>Forum</title>

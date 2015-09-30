@@ -33,6 +33,7 @@ function SignIn($conn) {
             echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...";
         }
     }
+    header('Location: http://localhost/forumtwo/securepage.php/');
 }
 
 ?>
